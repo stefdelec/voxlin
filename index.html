@@ -1,11 +1,16 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Voxlin - One Pager</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <style>
-        body {
+        body,a {
             font-family: 'Courier New', monospace;
             background-color: #000;
             color: #0f0;
@@ -15,51 +20,77 @@
             margin: 0 auto;
             max-width: 800px;
         }
-    
-        h1, h2, h3 {
+
+        h1{
+            font-weight: bold;
+            font-size:4rem;
+        }
+        h2, h3 {
             font-weight: bold;
             margin-bottom: 1rem;
         }
-    
+
         ul {
             list-style-type: none;
             padding-left: 1rem;
         }
-    
+
         li {
             margin-bottom: 0.5rem;
         }
-    
+
         p, ul {
             margin-bottom: 2rem;
         }
-    
+
+        img{
+            margin-right:10px;
+        }
+        .logo{
+            width:150px;
+            height:150px;
+        }
+        .title-container{
+            display:flex;
+            align-items:center;
+
+        }
+
         @media (max-width: 600px) {
             body {
                 font-size: 14px;
                 padding: 10px;
             }
         }
-    
+
     </style>
 </head>
 <body>
+<div class="title-container">
+    <img class='logo' src="https://raw.githubusercontent.com/stefdelec/voxlin/master/logo.png">
     <h1>Voxlin</h1>
-    <h3>A decentralized protocol for secure wallet address management</h3>
+</div>
 
-    <h2>Overview</h2>
-    <p>Voxlin is a cutting-edge protocol that enables users to securely manage multiple wallet addresses while maintaining security and control. By leveraging cryptographic proofs, Voxlin ensures that users can prove the ownership of their wallet addresses with only one wallet.</p>
 
-    <h2>Key Features</h2>
+<h3>A decentralized protocol for secure wallet address management</h3>
+
+<h2 >Overview</h2>
+<p>Voxlin is a cutting-edge protocol that enables users to securely manage multiple wallet addresses while maintaining security and control. By leveraging cryptographic proofs, Voxlin ensures that users can prove the ownership of their wallet addresses with only one wallet.</p>
+<a href="#key-feature-section">Key Features</a> | <a href="#compare-section"> differences with ENS</a> | <a href="#roadmap-section"> Roadmap</a> | <a href="#token-sale-section"> Token Sale</a>
+
+<a class='title-container' href="https://t.me/+_QFnLT0nsYo5NWI0">
+    <img style='height:50px' src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/512px-Telegram_logo.svg.png?20220101141644'/><h3>Join Telegram group</h3></a>
+<h2 id='key-feature-section'>Key Features</h2>
+
 <ul>
     <li><strong>Domain Name Linking:</strong> Voxlin allows users to link multiple wallet addresses to a domain name. These links can be registered for free.</li>
     <li><strong>Flexible Domain Management:</strong> Domains are acquired through payment in VLN for a specific period of time. After the time period expires, users can retain their linked addresses and assign them to a new domain name. Domains can be sold without affecting the linked addresses.</li>
     <li><strong>Multiple Assignments:</strong> A single set of linked addresses can be assigned to multiple domain names, providing flexibility in managing your digital identity across various platforms.</li>
     <li><strong>NFT domain:</strong> Each domain name comes with a NFT which serves as the user's profile. This profile can include links to a website, avatar images, and more, providing a highly customizable user experience.</li>
     <li><strong>Tradable:</strong> Domain is tradable. If domain NFT is sold, link between addresses and domain is obviously removed.</li>
-        <li><strong>Community driven: </strong>Voxlin is by design a decentralized governance and user centric</li>
+    <li><strong>Community driven: </strong>Voxlin is by design a decentralized governance and user centric</li>
 </ul>
-<h2>
+<h2 id='compare-section'>
     Main differences with ENS
 </h2>
 <ul>
@@ -70,28 +101,46 @@
     <li>
         <strong>Domain Management:</strong> With Voxlin, users can retain their linked addresses even after the expiration of the domain name. They can assign these linked addresses to a new domain name. This is a feature not currently provided by ENS. This gives Voxlin users greater flexibility and control over their domain names and linked addresses.
     </li>
-    
-</ul>
-    <h2>Token Sale</h2>
-    <p>The Voxlin ICO will involve the sale of a utility token that will enable participants to interact with the protocol, access premium features, and take part in governance decisions. Funds raised during the ICO will be used to further develop and improve the Voxlin protocol, ensuring its widespread adoption and success.</p>
 
-    <h3>Token Sale Details:</h3>
-    <ul>
-        <li>Token Name: Voxlin Token (VLN)</li>
-        <li>Total Supply: 100,000,000 VLN</li>
-        <li>ICO Price: 1 VLN = 0.10 USDC</li>
-        <li>Soft Cap: 5,000,000 USD</li>
-        <li>Hard Cap: 20,000,000 USD</li>
-        <li>Accepted Currencies: ETH, BTC, USDT, USDC</li>
-    </ul>
-    <h3>How it will work?</h3>
-    <ul>
-        <li>We will create a smart contract to buy $VLN at fixed price of 0.10 USDC.</li>
-        <li>$VLN ERC20 transfer is disable until launch of protocol. Enabling transfer is one-off method. Disabling will be impossible. $VLN will becomes a regular erc20 tradable on your favorite DEX</li>
-    </ul>
-    <ul>
-        <li>May 16, 2023</li>
-        <li>Voxlin Team.</li>
-    </ul>
+</ul>
+<h2 id="roadmap-section">
+    Roadmap
+</h2>
+<ul>
+    <li> During all the development, Volxlin team commits to communicate regulary to our community.</li>
+    <li>
+        STEP 0: engage with community to get maximum feedback to get the feastest market fit as possible
+    </li>
+    <li>
+        STEP 1: designing, developing and deploying smart contract
+    </li>
+    <li>
+        STEP 2: Creating Dapp to easily use our smart contract
+    </li>
+    <li>
+        STEP 3: Start to work with web3 and web2 actors to fasten widespread adoption
+    </li>
+</ul>
+<h2 id='token-sale-section'>Token Sale</h2>
+<p>The Voxlin ICO will involve the sale of a utility token that will enable participants to interact with the protocol, access premium features, and take part in governance decisions. Funds raised during the ICO will be used to further develop and improve the Voxlin protocol, ensuring its widespread adoption and success.</p>
+
+<h3>Token Sale Details:</h3>
+<ul>
+    <li>Token Name: Voxlin Token (VLN)</li>
+    <li>Total Supply: 100,000,000 VLN</li>
+    <li>ICO Price: 1 VLN = 0.10 USDC</li>
+    <li>Soft Cap: 5,000,000 USD</li>
+    <li>Hard Cap: 20,000,000 USD</li>
+    <li>Accepted Currencies: ETH, BTC, USDT, USDC</li>
+</ul>
+<h3>How it will work?</h3>
+<ul>
+    <li>We will create a smart contract to buy $VLN at fixed price of 0.10 USDC.</li>
+    <li>$VLN ERC20 transfer is disable until launch of protocol. Enabling transfer is one-off method. Disabling will be impossible. $VLN will becomes a regular erc20 tradable on your favorite DEX</li>
+</ul>
+<ul>
+    <li>May 16, 2023</li>
+    <li>Voxlin Team.</li>
+</ul>
 </body>
 </html>
