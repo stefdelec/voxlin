@@ -12,26 +12,35 @@
             padding: 20px;
             font-size: 16px;
             line-height: 1.5;
+            margin: 0 auto;
+            max-width: 800px;
         }
-
+    
         h1, h2, h3 {
             font-weight: bold;
             margin-bottom: 1rem;
         }
-
+    
         ul {
             list-style-type: none;
             padding-left: 1rem;
         }
-
+    
         li {
             margin-bottom: 0.5rem;
         }
-
+    
         p, ul {
             margin-bottom: 2rem;
         }
-
+    
+        @media (max-width: 600px) {
+            body {
+                font-size: 14px;
+                padding: 10px;
+            }
+        }
+    
     </style>
 </head>
 <body>
@@ -39,16 +48,29 @@
     <h3>A decentralized protocol for secure wallet address management</h3>
 
     <h2>Overview</h2>
-    <p>Voxlin is a cutting-edge protocol that enables users to securely manage multiple wallet addresses while maintaining security and control. By leveraging cryptographic proofs, Voxlin ensures that users can prove the ownership of their wallet addresses with one wallet.</p>
+    <p>Voxlin is a cutting-edge protocol that enables users to securely manage multiple wallet addresses while maintaining security and control. By leveraging cryptographic proofs, Voxlin ensures that users can prove the ownership of their wallet addresses with only one wallet.</p>
 
     <h2>Key Features</h2>
 <ul>
-    <li><strong>Domain Name Linking:</strong> Voxlin allows users to link multiple wallet addresses to a domain name, similar to ENS. These links can be registered for free.</li>
+    <li><strong>Domain Name Linking:</strong> Voxlin allows users to link multiple wallet addresses to a domain name. These links can be registered for free.</li>
     <li><strong>Flexible Domain Management:</strong> Domains are acquired through payment in VLN for a specific period of time. After the time period expires, users can retain their linked addresses and assign them to a new domain name. Domains can be sold without affecting the linked addresses.</li>
     <li><strong>Multiple Assignments:</strong> A single set of linked addresses can be assigned to multiple domain names, providing flexibility in managing your digital identity across various platforms.</li>
     <li><strong>Soulbound Tokens:</strong> Each domain name comes with a Soulbound token, which serves as the user's profile. This profile can include links to a website, avatar images, and more, providing a highly customizable user experience.</li>
+        <li><strong>Community driven: </strong>Voxlin is by design a decentralized governance and user centric</li>
 </ul>
+<h2>
+    Main differences with ENS
+</h2>
+<ul>
+    <li>
+        <stong>Multiple Wallet Association:</strong> Voxlin allows users to link multiple wallet addresses to a single domain name. This is a fundamental difference from ENS, which primarily maps one Ethereum address to a domain name. This feature allows Voxlin users to manage multiple addresses under a single domain name, which can be advantageous for users who manage multiple addresses for different purposes.
+    </li>
 
+    <li>
+        <strong></strong>Domain Management:</strong> With Voxlin, users can retain their linked addresses even after the expiration of the domain name. They can assign these linked addresses to a new domain name. This is a feature not currently provided by ENS. This gives Voxlin users greater flexibility and control over their domain names and linked addresses.
+    </li>
+    
+</ul>
 
     <h2>Token Sale</h2>
     <p>The Voxlin ICO will involve the sale of a utility token that will enable participants to interact with the protocol, access premium features, and take part in governance decisions. Funds raised during the ICO will be used to further develop and improve the Voxlin protocol, ensuring its widespread adoption and success.</p>
@@ -64,8 +86,12 @@
     </ul>
     <h3>How it will work?</h3>
     <ul>
-        <li>We will create a smart contract to buy $VLN at fixed price of 0.10 USDC</li>
+        <li>We will create a smart contract to buy $VLN at fixed price of 0.10 USDC.</li>
         <li>$VLN ERC20 transfer is disable until launch of protocol. Enabling transfer is one-off method. Disabling will be impossible. $VLN will becomes a regular erc20 tradable on your favorite DEX</li>
+    </ul>
+    <ul>
+        <li>May 16, 2023</li>
+        <li>Voxlin Team.</li>
     </ul>
 </body>
 </html>
